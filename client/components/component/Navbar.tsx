@@ -10,27 +10,27 @@ const navIcons = [
 const Navbar = () => {
   return (
     <header className="bg-primary text-primary-foreground py-4 px-6 flex items-center justify-between">
-      <Link href="#" className="flex items-center gap-2" prefetch={false}>
+      <Link href="/" className="flex items-center gap-2" prefetch={false}>
         <BoxIcon className="h-8 w-8" />
         <span className="text-xl font-bold">MorningBox</span>
       </Link>
       <nav className="hidden md:flex items-center gap-6">
         <Link
-          href="#"
+          href="/"
           className="text-sm font-medium hover:underline"
           prefetch={false}
         >
-          Features
+          Home
         </Link>
         <Link
-          href="#"
+          href="/catalog"
           className="text-sm font-medium hover:underline"
           prefetch={false}
         >
-          Pricing
+          Products
         </Link>
         <Link
-          href="#"
+          href="/about"
           className="text-sm font-medium hover:underline"
           prefetch={false}
         >

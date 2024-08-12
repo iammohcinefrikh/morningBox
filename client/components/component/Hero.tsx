@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function Hero() {
   return (
@@ -23,7 +24,7 @@ function Hero() {
             Explore the Catalog
           </Link>
         </div>
-        <img
+        <Image
           src="/placeholder.svg"
           width={600}
           height={400}

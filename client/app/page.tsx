@@ -1,43 +1,8 @@
 import Hero from "@/components/component/Hero";
 import ProductCard from "@/components/component/ProductCard";
 import Services from "@/components/component/Services";
-
-const products = [
-  {
-    href: "#",
-    imageSrc: "/placeholder.svg",
-    altText: "Product 1",
-    title: "Premium Coffee",
-    description: "Start your day with a delicious cup of our specialty coffee.",
-    price: "$19.99",
-  },
-  {
-    href: "#",
-    imageSrc: "/placeholder.svg",
-    altText: "Product 2",
-    title: "Organic Granola",
-    description: "Fuel your day with our nutritious and delicious granola.",
-    price: "$12.99",
-  },
-  {
-    href: "#",
-    imageSrc: "/placeholder.svg",
-    altText: "Product 3",
-    title: "Breakfast Mug Set",
-    description:
-      "Enjoy your morning beverages in style with our high-quality mugs.",
-    price: "$24.99",
-  },
-  {
-    href: "#",
-    imageSrc: "/placeholder.svg",
-    altText: "Product 4",
-    title: "Oatmeal Variety Pack",
-    description:
-      "Explore our selection of delicious and nutritious oatmeal flavors.",
-    price: "$14.99",
-  },
-];
+import { products } from "@/lib/utils";
+const topProducts = products.sort((a, b) => b.rating - a.rating).slice(0, 4);
 
 export default function Home() {
   return (
@@ -58,15 +23,16 @@ export default function Home() {
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {products.map((product, index) => (
+              {topProducts.map((product, index) => (
                 <ProductCard
                   key={index}
-                  href={product.href}
                   imageSrc={product.imageSrc}
                   altText={product.altText}
                   title={product.title}
                   description={product.description}
                   price={product.price}
+                  rating={product.rating}
+                  id={product.id}
                 />
               ))}
             </div>

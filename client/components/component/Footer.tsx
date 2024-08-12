@@ -6,8 +6,9 @@ function Footer() {
     <footer className="bg-primary text-primary-foreground py-6 px-4 md:px-6">
       <div className="container flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center gap-2">
-          <BoxIcon className="h-6 w-6" />
-          <span className="text-lg font-bold">MorningBox</span>
+          <p className="text-xs ">
+            &copy; 2024 MorningBox. All rights reserved.
+          </p>
         </div>
         <nav className="flex items-center gap-4 md:gap-6">
           <Link
