@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import Image from "next/image";
 
 export default function Component() {
   const [step, setStep] = useState(1);
@@ -78,7 +79,7 @@ export default function Component() {
                     key={item.id}
                     className="grid grid-cols-[auto_1fr_auto] items-center gap-4"
                   >
-                    <img
+                    <Image
                       src="/placeholder.svg"
                       alt={item.name}
                       width={64}
@@ -357,7 +358,7 @@ export default function Component() {
                         key={item.id}
                         className="grid grid-cols-[auto_1fr_auto] items-center gap-4"
                       >
-                        <img
+                        <Image
                           src="/placeholder.svg"
                           alt={item.name}
                           width={64}

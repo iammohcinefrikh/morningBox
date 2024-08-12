@@ -12,7 +12,7 @@ export default function Component() {
           <p className="text-muted-foreground">
             Already have an account?{" "}
             <Link
-              href="#"
+              href="login"
               className="font-medium underline underline-offset-4"
               prefetch={false}
             >

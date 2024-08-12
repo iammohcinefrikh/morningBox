@@ -1,8 +1,3 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/6tXBkFW6orz
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 import {
   Card,
   CardHeader,
@@ -49,9 +44,9 @@ export default function Component() {
           </Button>
         </CardContent>
         <CardFooter className="text-center text-sm text-muted-foreground">
-          Don't have an account?{" "}
+          Don&apos;t have an account?{" "}
           <Link
-            href="#"
+            href="/sing-up"
             className="font-medium underline underline-offset-4 hover:text-primary"
             prefetch={false}
           >

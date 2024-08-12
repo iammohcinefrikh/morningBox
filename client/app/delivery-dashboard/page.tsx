@@ -240,7 +240,7 @@ export default function Component() {
           </div>
         )}
       </main>
-      <footer className="bg-muted text-muted-foreground py-4 px-6">
+      <section className="bg-muted text-muted-foreground py-4 px-6">
         <h2 className="text-xl font-bold mb-4">Order History</h2>
         <div className="grid gap-4">
           <div>
@@ -267,7 +267,7 @@ export default function Component() {
             </ul>
           </div>
         </div>
-      </footer>
+      </section>
     </div>
   );
 }

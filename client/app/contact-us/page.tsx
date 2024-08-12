@@ -10,9 +10,9 @@ export default function Component() {
         <div>
           <h1 className="text-3xl font-bold mb-4">Get in Touch</h1>
           <p className="text-muted-foreground mb-8">
-            Have a question, feedback, or just want to say hello? We'd love to
-            hear from you. Feel free to reach out using the contact form below,
-            or by email at info@morningbox.com.
+            Have a question, feedback, or just want to say hello? We&apos;d love
+            to hear from you. Feel free to reach out using the contact form
+            below, or by email at info@morningbox.com.
           </p>
           <form className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
