@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Component() {
   const [orderStatus, setOrderStatus] = useState({
@@ -77,7 +78,7 @@ export default function Component() {
             <ul className="space-y-2">
               <li className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <img
+                  <Image
                     src="/placeholder.svg"
                     alt="Product Image"
                     width={40}
@@ -91,7 +92,7 @@ export default function Component() {
               </li>
               <li className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <img
+                  <Image
                     src="/placeholder.svg"
                     alt="Product Image"
                     width={40}

@@ -44,14 +44,15 @@ export default function Component() {
           </Button>
         </CardContent>
         <CardFooter className="text-center text-sm text-muted-foreground">
-          Don&apos;t have an account?{" "}
+          Don&apos;t have an account?&#32;{" "}
           <Link
             href="/sing-up"
             className="font-medium underline underline-offset-4 hover:text-primary"
             prefetch={false}
           >
             Register
-          </Link>
+          </Link>{" "}
+          {/* Add a space here */}
         </CardFooter>
       </Card>
     </div>
